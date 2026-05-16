@@ -3,32 +3,315 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trash Panda Import</title>
+    <title>Trash Panda Import — Authentic Canadian Raccoons Now in Sweden</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Trash Panda Import</h1>
-        <p>We're bringing the best of Canada to Sweden!</p>
-    </header>
-    <main>
-        <section class="feature-section">
-            <h2>Our Mission</h2>
-            <p>We aim to bring a little bit of Canadian wilderness to your doorstep, one raccoon at a time.</p>
-        </section>
-        <section class="feature-section">
-            <h2>Benefits of Trash Panda Imports</h2>
-            <ul>
-                <li>Get ready for some serious cute overload!</li>
-                <li>Experience the rugged Canadian wilderness in the comfort of your own home.</li>
-                <li>Support your local raccoon import business (just kidding, but seriously...)</li>
+
+    <!-- ════════════ HEADER / NAVIGATION ════════════ -->
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#" class="logo">
+                <span class="logo-panda">🦝</span> Trash Panda Import
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#breeds">Breeds</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
             </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Trash Panda Import</p>
+        </nav>
+    </header>
+
+    <!-- ════════════ HERO ════════════ -->
+
+    <section class="hero" id="home">
+        <div class="hero-badge">
+            <span>🛡️</span>
+            Svensk Raccoon Import Act — 100% Compliant
+            <a href="#faq" title="Learn more">Permit #SE-2024-RACCOON-42069</a>
+        </div>
+
+        <h1>TRASH PANDA<br><span class="accent">IMPORT</span></h1>
+
+        <p class="hero-subtitle">
+            Now in Sweden — authentic Canadian raccoons delivered to your doorstep
+        </p>
+        <p class="hero-swedish">
+            <em>Vi importerar äkta kanadensiska avfallspandor. Ja, allting är lagligt. Troligen.</em>
+        </p>
+
+        <div class="counter-section">
+            <div class="counter-number" id="raccoon-counter">0</div>
+            <div class="counter-label">Raccoons Imported So Far</div>
+        </div>
+
+        <a href="#packages" class="hero-cta">Order Your Raccoon Now →</a>
+
+        <div class="hero-footer">
+            Serving Sweden since 2024 · Stockholm · Göteborg · Malmö · everywhere your raccoon wants to be
+        </div>
+    </section>
+
+    <!-- ════════════ PACKAGES ════════════ -->
+
+    <section id="packages" class="breeds-section">
+        <div class="section">
+            <div class="section-header">
+                <p class="section-label">Packages</p>
+                <h2 class="section-title">Choose Your Panda</h2>
+                <p class="section-subtitle">Every package includes a raccoon and a signed import certificate. Which tier of trash are you?</p>
+            </div>
+
+            <div class="packages-grid">
+
+                <!-- Silver -->
+                <div class="package-card silver">
+                    <div class="package-icon">🥈</div>
+                    <p class="package-tier">Silver</p>
+                    <h3 class="package-name">Basic Trash Panda</h3>
+                    <p class="package-price">kr 14,995</p>
+                    <p class="package-price-note">Single raccoon. Delivered to somewhere in Sweden. Maybe.</p>
+                    <ul class="package-features">
+                        <li>One (1) purebred Canadian raccoon</li>
+                        <li>Minimal crate for transport</li>
+                        <li>Basic health certificate (paper only)</li>
+                        <li>Raccoon arrives somewhere in Sweden — exact location subject to raccoon discretion</li>
+                        <li>Import documentation included</li>
+                    </ul>
+                    <a href="#contact" class="package-btn">Choose Silver</a>
+                </div>
+
+                <!-- Gold — Featured -->
+                <div class="package-card gold featured">
+                    <div class="package-badge">⭐ Best Value</div>
+                    <div class="package-icon">🏆</div>
+                    <p class="package-tier">Gold</p>
+                    <h3 class="package-name">Premium Skägg Panda</h3>
+                    <p class="package-price">kr 34,995</p>
+                    <p class="package-price-note">The complete raccoon experience — what most Swedish families choose. Vi ska guld.</p>
+                    <ul class="package-features">
+                        <li>Hand-kissed raccoon before departure (verified with photo)</li>
+                        <li>3 full health certificates (Swedish, English, and Finnish)</li>
+                        <li>Personality guaranteed or your raccoon replaced (terms apply, raccoon availability required)</li>
+                        <li>Expedited customs clearance at Nordic border</li>
+                        <li>Complimentary hoodie (kr 2,495 value, not actually included)</li>
+                        <li>Priority shipping through Stockholm Arlanda</li>
+                    </ul>
+                    <a href="#contact" class="package-btn">Choose Gold — Best Value</a>
+                </div>
+
+                <!-- Platinum -->
+                <div class="package-card platinum">
+                    <div class="package-icon">💎</div>
+                    <p class="package-tier">Platinum</p>
+                    <h3 class="package-name">Kunglig Raccoon</h3>
+                    <p class="package-price">kr 69,995</p>
+                    <p class="package-price-note">For the Swedish family that takes raccoon ownership seriously. Full seriositet.</p>
+                    <ul class="package-features">
+                        <li>The raccoon chooses YOU — our proprietary matching algorithm does the rest</li>
+                        <li>Personal IKEA furniture imported for your raccoon (Billy bookcase with raccoon modifications included)</li>
+                        <li>Swedish-speaking handler present at delivery for proper introductions</li>
+                        <li>Personal raccoon passport with 34 official stamps from Canadian territories</li>
+                        <li>Priority shipping through Stockholm Arlanda VIP raccoon lounge</li>
+                        <li>24/7 Raccoon Concierge for first 12 months</li>
+                    </ul>
+                    <a href="#contact" class="package-btn">Choose Platinum — Full Experience</a>
+                </div>
+
+            </div>
+
+            <p class="packages-disclaimer">
+                "Vi förbehåller oss rätten att inte leverera. Din raccoon har sista ordet."
+                <br>
+                <small>We reserve the right to refuse delivery. Your raccoon has the final say. No exceptions.</small>
+            </p>
+        </div>
+    </section>
+
+    <!-- ════════════ BREEDS ════════════ -->
+
+    <section id="breeds">
+        <div class="section">
+            <div class="section-header">
+                <p class="section-label">Breeds</p>
+                <h2 class="section-title">Our Breeds</h2>
+                <p class="section-subtitle">Each raccoon is hand-selected from Canada's finest neighborhoods, alleys, and recycling stations. We only ship the best trash.</p>
+            </div>
+
+            <div class="breeds-grid">
+
+                <div class="breed-card">
+                    <div class="breed-emoji">🗑️🦝</div>
+                    <h3 class="breed-name">Common Trash Panda</h3>
+                    <p class="breed-latin"><em>Affekt-kämpe</em></p>
+                    <p class="breed-description">
+                        The gold standard of trash mastery. Known for spectacular trash-opening abilities and the uncanny ability to steal your neighbors' Wi-Fi. This is the raccoon most Swedes dream of owning — classic, reliable, and already suspicious of authority. The <em>Affekt-kämpe</em> is a perfect first-time raccoon parent's choice.
+                    </p>
+                </div>
+
+                <div class="breed-card">
+                    <div class="breed-emoji">❄️🦝</div>
+                    <h3 class="breed-name">Northern Boreal</h3>
+                    <p class="breed-latin"><em>Vinterhard</em></p>
+                    <p class="breed-description">
+                        Survives the frozen tundra of northern Alberta. With a tiny parka, they can comfortably handle even Norrland winters. <em>Kanske inte Norrland, men Mälardalen borde vara okej.</em> This breed has been known to enjoy fika — though they prefer their cinnamon buns untouched by their paws (they've been seen, but we don't talk about that).
+                    </p>
+                </div>
+
+                <div class="breed-card">
+                    <div class="breed-emoji">🏙️🦝</div>
+                    <h3 class="breed-name">Stockholm Alley Special</h3>
+                    <p class="breed-latin"><em>Stockholmspecialen</em></p>
+                    <p class="breed-description">
+                        Born and raised in Östermalm alleys. Already speaks basic Swedish and gives you the silent treatment on purpose. They prefer the city life. <em>I will not be going to the countryside. No, I do not want to play with other raccoons. Yes, this is fine.</em> If you want a raccoon that fits into Stockholm apartment life, this is your <em>lagom</em> choice.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ TESTIMONIALS ════════════ -->
+
+    <section id="reviews" class="breeds-section">
+        <div class="section">
+            <div class="section-header">
+                <p class="section-label">Reviews</p>
+                <h2 class="section-title">What Our Raccoon Owners Say</h2>
+                <p class="section-subtitle">Real reviews from real Swedish raccoon parents. Not a single one is fake. Probably.</p>
+            </div>
+
+            <div class="testimonials-grid">
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "I bought a raccoon and my neighbor is no longer angry. Thank you. 🇸🇪🇨🇦"
+                    </p>
+                    <p class="testimonial-author">Sven</p>
+                    <p class="testimonial-location">Göteborg</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "My raccoon fits perfectly into <em>lagom</em> culture. It's not too cute, not too trashy. Perfect balance. Just yesterday it organized our kitchen while I was at work. Very Swedish. <em>Hyggeligt, men bättre.</em>"
+                    </p>
+                    <p class="testimonial-author">Karin</p>
+                    <p class="testimonial-location">Stockholm</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">
+                        "I bought a Platinum raccoon. It moved to Malmö and is doing MUCH better than me. 10/12 would recommend. They have a great life there. I'm genuinely jealous. <em>Alltid bra i Sverige, va?</em>"
+                    </p>
+                    <p class="testimonial-author">Erik</p>
+                    <p class="testimonial-location">Uppsala</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ FAQ ════════════ -->
+
+    <section id="faq" class="faq-section">
+        <div class="section">
+            <div class="section-header">
+                <p class="section-label">FAQ</p>
+                <h2 class="section-title">Common Questions</h2>
+                <p class="section-subtitle">Everything you need to know before welcoming a raccoon into your Swedish home. <em>Vanliga frågor, vanliga svar. Inte alltför krångligt.</em></p>
+            </div>
+
+            <div class="faq-list">
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        Are they legal? <span class="faq-chevron">▾</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>Absolutely! All our raccoons are imported under Import Permit <strong>#SE-2024-RACCOON-42069</strong>, fully compliant with the Swedish Customs Raccoon Import Act of 2024. (Proposed in the Riksdagen by Sweden's first Raccoon Party candidate.) We handle all paperwork — so all you have to do is prepare a cozy space and your heart. <em>Ja, det är lagligt. Vi lovar. Nästan.</em></p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        Will they survive the winter? <span class="faq-chevron">▾</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>They're Canadian. They have hoodies. We'll buy the hoodie separately (<strong>kr 2,495</strong>). Our raccoons are some of the hardiest animals on earth — if they can eat discarded kebab from Stawis, they can survive <em>anything</em>. A properly fitted Canadian hoodie costs extra (kr 2,495) and is <em>strongly recommended</em> for Norrland deliveries. <em>De är vana vid kyla, no worries.</em></p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        Can they climb inside houses? <span class="faq-chevron">▾</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>That's not a bug — it's a feature. <strong>Free security system included!</strong> Your raccoon will be on the roof at 3am. No, they don't protect you. Yes, they will judge you from the gutter. But at least they look adorable doing it. <em>Det kallas för frihet, Sven.</em> Also a feature. <em>Free upgrade.</em></p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        Are they little bears? <span class="faq-chevron">▾</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>No. They are trash pandas. There is a significant difference. A bear mauls you. A raccoon holds your kitchen hostage and negotiates for more cereal. <strong>Choose your fighter.</strong> <em>Inte samma sak, alls.</em></p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary class="faq-question">
+                        How long does delivery take? <span class="faq-chevron">▾</span>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>3–6 business days, depending on how much trash they packed along the way. We've had raccoons get stuck in bear traps on the way to Gothenburg, but that's just part of the Canadian experience. <em>Var tålmodig. Din raccoon kommer fram. Ibland med en historia.</em> Sometimes with a story. <em>Men de lever.</em></p>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════ FOOTER ════════════ -->
+
+    <footer class="site-footer" id="contact">
+        <div class="footer-stats">
+            <div>
+                <div class="stat-number">1,337</div>
+                <div class="stat-label">Raccoons Imported</div>
+            </div>
+            <div>
+                <div class="stat-number">1,284</div>
+                <div class="stat-label">Happy Swedish Families</div>
+            </div>
+            <div>
+                <div class="stat-number">847</div>
+                <div class="stat-label">Bear Traps Avoided</div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-disclaimer">
+                Raccoons may contain 10–15% trash, 85–90% panda soul. Not FDA approved. Not even close. All raccoons are sold with the understanding that they will judge your life choices. Return policy: not available — your raccoon makes the final decision. <em>Inga returer. Hela hjärtat.</em>
+            </p>
+            <p class="footer-copyright">© 2024 Trash Panda Import AB. All rights reserved. All raccoons reserved.</p>
+            <p class="footer-tagline">"Vi tar skräpet allvarligt."</p>
+        </div>
     </footer>
 
+    <!-- ════════════ SCRIPTS ════════════ -->
+
     <script src="script.js"></script>
+
 </body>
 </html>
