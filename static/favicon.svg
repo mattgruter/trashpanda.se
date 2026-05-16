@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#6b6b6b"/>
+  <!-- ears -->
+  <circle cx="8" cy="7" r="4" fill="#5a5a5a"/>
+  <circle cx="24" cy="7" r="4" fill="#5a5a5a"/>
+  <circle cx="8" cy="7" r="2" fill="#d4a5a5"/>
+  <circle cx="24" cy="7" r="2" fill="#d4a5a5"/>
+  <!-- head -->
+  <circle cx="16" cy="17" r="11" fill="#8c8c8c"/>
+  <!-- mask -->
+  <ellipse cx="16" cy="17" rx="9" ry="6" fill="#4a4a4a"/>
+  <!-- eyes -->
+  <ellipse cx="12" cy="15" rx="3" ry="3.5" fill="white"/>
+  <ellipse cx="20" cy="15" rx="3" ry="3.5" fill="white"/>
+  <circle cx="12" cy="15.5" r="1.8" fill="#2d2d2d"/>
+  <circle cx="20" cy="15.5" r="1.8" fill="#2d2d2d"/>
+  <circle cx="12.7" cy="14.7" r=".7" fill="white"/>
+  <circle cx="20.7" cy="14.7" r=".7" fill="white"/>
+  <!-- nose -->
+  <ellipse cx="16" cy="19" rx="2.5" ry="1.8" fill="#2d2d2d"/>
+  <!-- mouth -->
+  <path d="M14.5 21 Q16 22.5 17.5 21" stroke="#2d2d2d" stroke-width=".8" fill="none" stroke-linecap="round"/>
+</svg>
