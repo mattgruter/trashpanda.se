@@ -8,310 +8,577 @@
 </head>
 <body>
 
-    <!-- ════════════ HEADER / NAVIGATION ════════════ -->
+    <!-- ════════════ Floating Background Raccoons ════════════ -->
+     <div class="floaters">
+         <span>🦝</span><span>🗑️</span><span>🦝</span><span>🗑️</span><span>🦝</span>
+         <span>🗑️</span><span>🦝</span><span>🗑️</span><span>🦝</span><span>🗑️</span>
+         <span>🦝</span><span>🗑️</span><span>🦝</span><span>🗑️</span><span>🦝</span>
+     </div>
 
-    <header class="site-header">
-        <nav class="nav" aria-label="Main navigation">
-            <a href="#" class="logo">
-                <span class="logo-panda">🦝</span> Trash Panda Import
-            </a>
-            <button class="mobile-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#packages">Packages</a></li>
-                <li><a href="#breeds">Breeds</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact" class="nav-cta">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+     <!-- ════════════ HEADER / NAVIGATION ════════════ -->
 
-    <!-- ════════════ HERO ════════════ -->
+     <header class="site-header">
+         <nav class="nav">
+             <a href="#" class="logo">
+                 <span class="logo-panda">🦝</span> Trash Panda Import
+             </a>
+             <button class="mobile-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+                 <span></span><span></span><span></span>
+             </button>
+             <ul class="nav-links">
+                 <li><a href="#home">Home</a></li>
+                 <li><a href="#packages">Packages</a></li>
+                 <li><a href="#breeds">Breeds</a></li>
+                 <li><a href="#reviews">Reviews</a></li>
+                 <li><a href="#faq">FAQ</a></li>
+                 <li><a href="#contact" class="nav-cta">Contact</a></li>
+             </ul>
+         </nav>
+     </header>
 
-    <section class="hero" id="home">
-        <div class="hero-badge">
-            <span>🛡️</span>
-            Svensk Raccoon Import Act — 100% Compliant
-            <a href="#faq" title="Learn more">Permit #SE-2024-RACCOON-42069</a>
-        </div>
+     <!-- ════════════ HERO ════════════ -->
 
-        <h1>TRASH PANDA<br><span class="accent">IMPORT</span></h1>
+     <section class="hero" id="home">
+         <div class="hero-visual">
+             <!-- SVG Raccoon Head -->
+             <svg id="hero-raccoon" class="raccoon-illustration" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer">
+                 <!-- Body -->
+                 <ellipse cx="150" cy="260" rx="100" ry="50" fill="#4a4a4a"/>
+                 <!-- Head -->
+                 <circle cx="150" cy="150" r="85" fill="#8c8c8c"/>
+                 <!-- Left ear -->
+                 <circle cx="95" cy="90" r="22" fill="#6b6b6b"/>
+                 <circle cx="95" cy="90" r="14" fill="#d4a5a5"/>
+                 <!-- Right ear -->
+                 <circle cx="205" cy="90" r="22" fill="#6b6b6b"/>
+                 <circle cx="205" cy="90" r="14" fill="#d4a5a5"/>
+                 <!-- Mask background -->
+                 <ellipse cx="150" cy="145" rx="75" ry="50" fill="#4a4a4a"/>
+                 <!-- Left eye area - white -->
+                 <ellipse cx="120" cy="130" rx="22" ry="25" fill="white"/>
+                 <!-- Right eye area - white -->
+                 <ellipse cx="180" cy="130" rx="22" ry="25" fill="white"/>
+                 <!-- Left pupil -->
+                 <circle cx="120" cy="133" r="10" fill="#2d2d2d"/>
+                 <!-- Right pupil -->
+                 <circle cx="180" cy="133" r="10" fill="#2d2d2d"/>
+                 <!-- Left highlight -->
+                 <circle cx="124" cy="129" r="4" fill="white"/>
+                 <!-- Right highlight -->
+                 <circle cx="184" cy="129" r="4" fill="white"/>
+                 <!-- Nose -->
+                 <ellipse cx="150" cy="165" rx="12" ry="8" fill="#2d2d2d"/>
+                 <!-- Mouth line -->
+                 <path d="M142 175 Q150 185 158 175" stroke="#2d2d2d" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                 <!-- Cheek blushes -->
+                 <circle cx="108" cy="160" r="10" fill="#f0b4a4" opacity="0.5"/>
+                 <circle cx="192" cy="160" r="10" fill="#f0b4a4" opacity="0.5"/>
+                 <!-- Arms reaching out -->
+                 <ellipse cx="65" cy="200" rx="28" ry="14" fill="#6b6b6b" transform="rotate(-20 65 200)"/>
+                 <ellipse cx="235" cy="200" rx="28" ry="14" fill="#6b6b6b" transform="rotate(20 235 200)"/>
+                 <!-- Left hand paws -->
+                 <circle cx="40" cy="205" r="10" fill="#5a5a5a"/>
+                 <circle cx="33" cy="198" r="5" fill="#5a5a5a"/>
+                 <circle cx="42" cy="195" r="5" fill="#5a5a5a"/>
+                 <!-- Right hand paws -->
+                 <circle cx="260" cy="205" r="10" fill="#5a5a5a"/>
+                 <circle cx="267" cy="198" r="5" fill="#5a5a5a"/>
+                 <circle cx="258" cy="195" r="5" fill="#5a5a5a"/>
+                 <!-- Tail -->
+                 <path d="M240 260 Q270 270 260 295 Q250 310 240 300 Q250 290 240 280 Q235 275 240 260" fill="#6b6b6b" stroke="#4a4a4a" stroke-width="1.5"/>
+                 <!-- Tail stripes -->
+                 <path d="M243 268 Q255 272 250 282" stroke="#4a4a4a" stroke-width="3" fill="none"/>
+                 <path d="M240 278 Q252 282 248 292" stroke="#4a4a4a" stroke-width="3" fill="none"/>
+                 <!-- Crown (playful touch) -->
+                 <path d="M125 75 L130 55 L140 68 L150 45 L160 68 L170 55 L175 75" fill="#FFD700" stroke="#e6c200" stroke-width="1.5"/>
+             </svg>
+             <div class="hero-badge">
+                 <span>🛡️</span>
+                 Svensk Raccoon Import Act — 100% Compliant
+                 <a href="#faq" title="Learn more">Permit #SE-2024-RACCOON-42069</a>
+             </div>
+         </div>
 
-        <p class="hero-subtitle">
-            Now in Sweden — authentic Canadian raccoons delivered to your doorstep
-        </p>
-        <p class="hero-swedish">
-            <em>Vi importerar äkta kanadensiska avfallspandor. Ja, allting är lagligt. Troligen.</em>
-        </p>
+         <h1>TRASH PANDA<br>IMPORT</h1>
 
-        <div class="counter-section">
-            <div class="counter-number" id="raccoon-counter">0</div>
-            <div class="counter-label">Raccoons Imported So Far</div>
-        </div>
+         <p class="hero-subtitle">
+             Your Swedish raccoon deserves better. So we imported them from Canada. 🦝
+         </p>
+         <p class="hero-swedish">
+             <em>Vi importerar äkta kanadensiska avfallspandor. Ja, allting är lagligt. Troligen.</em>
+         </p>
 
-        <a href="#packages" class="hero-cta">Order Your Raccoon Now →</a>
+         <div class="counter-section">
+             <div class="counter-number" id="raccoon-counter">0</div>
+             <div class="counter-label">Raccoons Imported So Far</div>
+         </div>
 
-        <div class="hero-footer">
-            Serving Sweden since 2024 · Stockholm · Göteborg · Malmö · everywhere your raccoon wants to be
-        </div>
-    </section>
+         <a href="#packages" class="hero-cta">Order Your Raccoon Now →</a>
 
-    <!-- ════════════ PACKAGES ════════════ -->
+         <div class="hero-footer">
+             Serving Sweden since 2024 · Stockholm · Göteborg · Malmö · everywhere your raccoon wants to be
+          </div>
+     </section>
 
-    <section id="packages" class="breeds-section">
-        <div class="section">
-            <div class="section-header">
-                <p class="section-label">Packages</p>
-                <h2 class="section-title">Choose Your Panda</h2>
-                <p class="section-subtitle">Every package includes a raccoon and a signed import certificate. Which tier of trash are you?</p>
-            </div>
+     <!-- ════════════ PACKAGES ════════════ -->
 
-            <div class="packages-grid">
+     <section id="packages" class="breeds-section">
+         <div class="section">
+             <div class="section-header">
+                 <p class="section-label">Packages</p>
+                 <h2 class="section-title">Choose Your Panda</h2>
+                 <p class="section-subtitle">Every package includes a raccoon and a signed import certificate. Which tier of trash are you?</p>
+             </div>
 
-                <!-- Silver -->
-                <div class="package-card silver">
-                    <div class="package-icon">🥈</div>
-                    <p class="package-tier">Silver</p>
-                    <h3 class="package-name">Basic Trash Panda</h3>
-                    <p class="package-price">kr 14,995</p>
-                    <p class="package-price-note">Single raccoon. Delivered to somewhere in Sweden. Maybe.</p>
-                    <ul class="package-features">
-                        <li>One (1) purebred Canadian raccoon</li>
-                        <li>Minimal crate for transport</li>
-                        <li>Basic health certificate (paper only)</li>
-                        <li>Raccoon arrives somewhere in Sweden — exact location subject to raccoon discretion</li>
-                        <li>Import documentation included</li>
-                    </ul>
-                    <a href="#contact" class="package-btn">Choose Silver</a>
-                </div>
+             <!-- Decorative raccoons flanking section -->
+             <div class="section-raccoons">
+                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                     <circle cx="40" cy="40" r="35" fill="#6b6b6b"/>
+                     <circle cx="40" cy="40" r="28" fill="#8c8c8c"/>
+                     <ellipse cx="40" cy="42" rx="22" ry="15" fill="#4a4a4a"/>
+                     <ellipse cx="32" cy="35" rx="7" ry="8" fill="white"/>
+                     <ellipse cx="48" cy="35" rx="7" ry="8" fill="white"/>
+                     <circle cx="32" cy="36" r="3.5" fill="#2d2d2d"/>
+                     <circle cx="48" cy="36" r="3.5" fill="#2d2d2d"/>
+                     <circle cx="33.5" cy="34.5" r="1.5" fill="white"/>
+                     <circle cx="49.5" cy="34.5" r="1.5" fill="white"/>
+                     <ellipse cx="40" cy="44" rx="4" ry="3" fill="#2d2d2d"/>
+                     <path d="M37 48 Q40 51 43 48" stroke="#2d2d2d" stroke-width="1.5" fill="none"/>
+                     <circle cx="30" cy="47" r="3.5" fill="#f0b4a4" opacity="0.4"/>
+                     <circle cx="50" cy="47" r="3.5" fill="#f0b4a4" opacity="0.4"/>
+                     <circle cx="22" cy="18" r="9" fill="#6b6b6b"/>
+                     <circle cx="58" cy="18" r="9" fill="#6b6b6b"/>
+                     <circle cx="22" cy="18" r="5" fill="#d4a5a5"/>
+                     <circle cx="58" cy="18" r="5" fill="#d4a5a5"/>
+                 </svg>
+                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                     <circle cx="40" cy="40" r="35" fill="#6b6b6b"/>
+                     <circle cx="40" cy="40" r="28" fill="#8c8c8c"/>
+                     <ellipse cx="40" cy="42" rx="22" ry="15" fill="#4a4a4a"/>
+                     <ellipse cx="32" cy="35" rx="7" ry="8" fill="white"/>
+                     <ellipse cx="48" cy="35" rx="7" ry="8" fill="white"/>
+                     <circle cx="32" cy="36" r="3.5" fill="#2d2d2d"/>
+                     <circle cx="48" cy="36" r="3.5" fill="#2d2d2d"/>
+                     <circle cx="33.5" cy="34.5" r="1.5" fill="white"/>
+                     <circle cx="49.5" cy="34.5" r="1.5" fill="white"/>
+                     <ellipse cx="40" cy="44" rx="4" ry="3" fill="#2d2d2d"/>
+                     <path d="M37 48 Q40 51 43 48" stroke="#2d2d2d" stroke-width="1.5" fill="none"/>
+                     <circle cx="30" cy="47" r="3.5" fill="#f0b4a4" opacity="0.4"/>
+                     <circle cx="50" cy="47" r="3.5" fill="#f0b4a4" opacity="0.4"/>
+                     <circle cx="22" cy="18" r="9" fill="#6b6b6b"/>
+                     <circle cx="58" cy="18" r="9" fill="#6b6b6b"/>
+                     <circle cx="22" cy="18" r="5" fill="#d4a5a5"/>
+                     <circle cx="58" cy="18" r="5" fill="#d4a5a5"/>
+                 </svg>
+             </div>
 
-                <!-- Gold — Featured -->
-                <div class="package-card gold featured">
-                    <div class="package-badge">⭐ Best Value</div>
-                    <div class="package-icon">🏆</div>
-                    <p class="package-tier">Gold</p>
-                    <h3 class="package-name">Premium Skägg Panda</h3>
-                    <p class="package-price">kr 34,995</p>
-                    <p class="package-price-note">The complete raccoon experience — what most Swedish families choose. Vi ska guld.</p>
-                    <ul class="package-features">
-                        <li>Hand-kissed raccoon before departure (verified with photo)</li>
-                        <li>3 full health certificates (Swedish, English, and Finnish)</li>
-                        <li>Personality guaranteed or your raccoon replaced (terms apply, raccoon availability required)</li>
-                        <li>Expedited customs clearance at Nordic border</li>
-                        <li>Complimentary hoodie (kr 2,495 value, not actually included)</li>
-                        <li>Priority shipping through Stockholm Arlanda</li>
-                    </ul>
-                    <a href="#contact" class="package-btn">Choose Gold — Best Value</a>
-                </div>
+             <div class="packages-grid">
 
-                <!-- Platinum -->
-                <div class="package-card platinum">
-                    <div class="package-icon">💎</div>
-                    <p class="package-tier">Platinum</p>
-                    <h3 class="package-name">Kunglig Raccoon</h3>
-                    <p class="package-price">kr 69,995</p>
-                    <p class="package-price-note">For the Swedish family that takes raccoon ownership seriously. Full seriositet.</p>
-                    <ul class="package-features">
-                        <li>The raccoon chooses YOU — our proprietary matching algorithm does the rest</li>
-                        <li>Personal IKEA furniture imported for your raccoon (Billy bookcase with raccoon modifications included)</li>
-                        <li>Swedish-speaking handler present at delivery for proper introductions</li>
-                        <li>Personal raccoon passport with 34 official stamps from Canadian territories</li>
-                        <li>Priority shipping through Stockholm Arlanda VIP raccoon lounge</li>
-                        <li>24/7 Raccoon Concierge for first 12 months</li>
-                    </ul>
-                    <a href="#contact" class="package-btn">Choose Platinum — Full Experience</a>
-                </div>
+                 <!-- Silver -->
+                 <div class="package-card silver">
+                     <div class="package-icon">🥈</div>
+                     <p class="package-tier">Silver</p>
+                     <h3 class="package-name">Basic Trash Panda</h3>
+                     <p class="package-price">kr 14,995</p>
+                     <p class="package-price-note">Single raccoon. Delivered to somewhere in Sweden. Maybe.</p>
+                     <ul class="package-features">
+                         <li>One (1) purebred Canadian raccoon</li>
+                         <li>Minimal crate for transport</li>
+                         <li>Basic health certificate (paper only)</li>
+                         <li>Raccoon arrives somewhere in Sweden — exact location subject to raccoon discretion</li>
+                         <li>Import documentation included</li>
+                     </ul>
+                     <a href="#contact" class="package-btn">Choose Silver</a>
+                 </div>
 
-            </div>
+                 <!-- Gold — Featured -->
+                 <div class="package-card gold featured">
+                     <div class="package-badge">⭐ Best Value</div>
+                     <div class="package-icon">🏆</div>
+                     <p class="package-tier">Gold</p>
+                     <h3 class="package-name">Premium Skägg Panda</h3>
+                     <p class="package-price">kr 34,995</p>
+                     <p class="package-price-note">The complete raccoon experience — what most Swedish families choose. Vi ska guld.</p>
+                     <ul class="package-features">
+                         <li>Hand-kissed raccoon before departure (verified with photo)</li>
+                         <li>3 full health certificates (Swedish, English, and Finnish)</li>
+                         <li>Personality guaranteed or your raccoon replaced (terms apply, raccoon availability required)</li>
+                         <li>Expedited customs clearance at Nordic border</li>
+                         <li>Complimentary hoodie (kr 2,495 value, not actually included)</li>
+                         <li>Priority shipping through Stockholm Arlanda</li>
+                     </ul>
+                     <a href="#contact" class="package-btn">Choose Gold — Best Value</a>
+                 </div>
 
-            <p class="packages-disclaimer">
-                "Vi förbehåller oss rätten att inte leverera. Din raccoon har sista ordet."
-                <br>
-                <small>We reserve the right to refuse delivery. Your raccoon has the final say. No exceptions.</small>
-            </p>
-        </div>
-    </section>
+                 <!-- Platinum -->
+                 <div class="package-card platinum">
+                     <div class="package-icon">💎</div>
+                     <p class="package-tier">Platinum</p>
+                     <h3 class="package-name">Kunglig Raccoon</h3>
+                     <p class="package-price">kr 69,995</p>
+                     <p class="package-price-note">For the Swedish family that takes raccoon ownership seriously. Full seriositet.</p>
+                     <ul class="package-features">
+                         <li>The raccoon chooses YOU — our proprietary matching algorithm does the rest</li>
+                         <li>Personal IKEA furniture imported for your raccoon (Billy bookcase with raccoon modifications included)</li>
+                         <li>Swedish-speaking handler present at delivery for proper introductions</li>
+                         <li>Personal raccoon passport with 34 official stamps from Canadian territories</li>
+                         <li>Priority shipping through Stockholm Arlanda VIP raccoon lounge</li>
+                         <li>24/7 Raccoon Concierge for first 12 months</li>
+                     </ul>
+                     <a href="#contact" class="package-btn">Choose Platinum — Full Experience</a>
+                 </div>
 
-    <!-- ════════════ BREEDS ════════════ -->
+             </div>
 
-    <section id="breeds">
-        <div class="section">
-            <div class="section-header">
-                <p class="section-label">Breeds</p>
-                <h2 class="section-title">Our Breeds</h2>
-                <p class="section-subtitle">Each raccoon is hand-selected from Canada's finest neighborhoods, alleys, and recycling stations. We only ship the best trash.</p>
-            </div>
+             <p class="packages-disclaimer">
+                 "Vi förbehåller oss rätten att inte leverera. Din raccoon har sista ordet."
+                 <br>
+                 <small>We reserve the right to refuse delivery. Your raccoon has the final say. No exceptions.</small>
+             </p>
+         </div>
+     </section>
 
-            <div class="breeds-grid">
+     <!-- ════════════ BREEDS ════════════ -->
 
-                <div class="breed-card">
-                    <div class="breed-emoji">🗑️🦝</div>
-                    <h3 class="breed-name">Common Trash Panda</h3>
-                    <p class="breed-latin"><em>Affekt-kämpe</em></p>
-                    <p class="breed-description">
+     <section id="breeds">
+         <div class="section">
+             <div class="section-header">
+                 <p class="section-label">Breeds</p>
+                 <h2 class="section-title">Our Breeds</h2>
+                 <p class="section-subtitle">Each raccoon is hand-selected from Canada's finest neighborhoods, alleys, and recycling stations. We only ship the best trash.</p>
+             </div>
+
+             <div class="breeds-grid">
+
+                 <div class="breed-card">
+                     <div class="breed-illustration">
+                         <svg viewBox="0 0 200 200" fill="none">
+                             <!-- Trash can -->
+                             <rect x="55" y="90" width="90" height="80" rx="8" fill="#8a9a7b"/>
+                             <rect x="60" y="95" width="80" height="70" rx="4" fill="#7a8a6b"/>
+                             <rect x="50" y="80" width="100" height="15" rx="5" fill="#6b7a5b"/>
+                             <rect x="85" y="68" width="30" height="12" rx="4" fill="#5a6b4a"/>
+                             <!-- Trash items spilling out -->
+                             <rect x="72" y="62" width="15" height="10" rx="2" fill="#d4a574" transform="rotate(-15 72 62)"/>
+                             <circle cx="130" cy="65" r="8" fill="#c4b494"/>
+                             <path d="M140 68 L145 55 L150 68Z" fill="#e8a040"/>
+                             <!-- Raccoon head peeking from can -->
+                             <circle cx="100" cy="85" r="30" fill="#8c8c8c"/>
+                             <ellipse cx="100" cy="88" rx="22" ry="15" fill="#4a4a4a"/>
+                             <ellipse cx="90" cy="80" rx="7" ry="8" fill="white"/>
+                             <ellipse cx="110" cy="80" rx="7" ry="8" fill="white"/>
+                             <circle cx="90" cy="81" r="3.5" fill="#2d2d2d"/>
+                             <circle cx="110" cy="81" r="3.5" fill="#2d2d2d"/>
+                             <circle cx="91.5" cy="79.5" r="1.5" fill="white"/>
+                             <circle cx="111.5" cy="79.5" r="1.5" fill="white"/>
+                             <ellipse cx="100" cy="92" rx="4" ry="3" fill="#2d2d2d"/>
+                             <path d="M97 96 Q100 99 103 96" stroke="#2d2d2d" stroke-width="1.5" fill="none"/>
+                             <circle cx="84" cy="94" r="3.5" fill="#f0b4a4" opacity="0.4"/>
+                             <circle cx="116" cy="94" r="3.5" fill="#f0b4a4" opacity="0.4"/>
+                             <circle cx="75" cy="62" r="8" fill="#6b6b6b"/>
+                             <circle cx="125" cy="62" r="8" fill="#6b6b6b"/>
+                             <circle cx="75" cy="62" r="4.5" fill="#d4a5a5"/>
+                             <circle cx="125" cy="62" r="4.5" fill="#d4a5a5"/>
+                             <!-- Sunglasses for attitude -->
+                             <rect x="82" y="76" width="14" height="10" rx="5" fill="#2d2d2d" transform="rotate(-3 82 76)"/>
+                             <rect x="104" y="76" width="14" height="10" rx="5" fill="#2d2d2d" transform="rotate(3 104 76)"/>
+                             <line x1="96" y1="79" x2="104" y2="79" stroke="#2d2d2d" stroke-width="1.5"/>
+                         </svg>
+                     </div>
+                     <h3 class="breed-name">Common Trash Panda</h3>
+                     <p class="breed-latin"><em>Affekt-kämpe</em></p>
+                     <p class="breed-description">
                         The gold standard of trash mastery. Known for spectacular trash-opening abilities and the uncanny ability to steal your neighbors' Wi-Fi. This is the raccoon most Swedes dream of owning — classic, reliable, and already suspicious of authority. The <em>Affekt-kämpe</em> is a perfect first-time raccoon parent's choice.
-                    </p>
-                </div>
+                     </p>
+                 </div>
 
-                <div class="breed-card">
-                    <div class="breed-emoji">❄️🦝</div>
-                    <h3 class="breed-name">Northern Boreal</h3>
-                    <p class="breed-latin"><em>Vinterhard</em></p>
-                    <p class="breed-description">
+                 <div class="breed-card">
+                     <div class="breed-illustration">
+                         <svg viewBox="0 0 200 200" fill="none">
+                             <!-- Snow background -->
+                             <circle cx="100" cy="100" r="70" fill="#e8f0f4"/>
+                             <!-- Snowflakes -->
+                             <circle cx="60" cy="70" r="2" fill="#c4d8e4"/>
+                             <circle cx="140" cy="60" r="2.5" fill="#c4d8e4"/>
+                             <circle cx="155" cy="100" r="1.5" fill="#c4d8e4"/>
+                             <circle cx="50" cy="120" r="2" fill="#c4d8e4"/>
+                             <circle cx="130" cy="130" r="2" fill="#c4d8e4"/>
+                             <circle cx="80" cy="160" r="1.5" fill="#c4d8e4"/>
+                             <!-- Raccoon wearing a tiny parka/hoodie -->
+                             <!-- Body in hoodie -->
+                             <ellipse cx="100" cy="135" rx="35" ry="30" fill="#cc3333"/>
+                             <ellipse cx="100" cy="135" rx="30" ry="25" fill="#d44444"/>
+                             <!-- Hoodie strings -->
+                             <line x1="92" y1="115" x2="88" y2="130" stroke="white" stroke-width="2"/>
+                             <line x1="108" y1="115" x2="112" y2="130" stroke="white" stroke-width="2"/>
+                             <!-- Head -->
+                             <circle cx="100" cy="100" r="28" fill="#8c8c8c"/>
+                             <ellipse cx="100" cy="103" rx="22" ry="15" fill="#4a4a4a"/>
+                             <ellipse cx="91" cy="95" rx="7" ry="8" fill="white"/>
+                             <ellipse cx="109" cy="95" rx="7" ry="8" fill="white"/>
+                             <circle cx="91" cy="96" r="3.5" fill="#2d2d2d"/>
+                             <circle cx="109" cy="96" r="3.5" fill="#2d2d2d"/>
+                             <circle cx="92.5" cy="94" r="1.5" fill="white"/>
+                             <circle cx="110.5" cy="94" r="1.5" fill="white"/>
+                             <ellipse cx="100" cy="108" rx="4" ry="3" fill="#2d2d2d"/>
+                             <path d="M97 112 Q100 115 103 112" stroke="#2d2d2d" stroke-width="1.5" fill="none"/>
+                             <circle cx="84" cy="110" r="3.5" fill="#f0b4a4" opacity="0.4"/>
+                             <circle cx="116" cy="110" r="3.5" fill="#f0b4a4" opacity="0.4"/>
+                             <!-- Ears -->
+                             <circle cx="77" cy="79" r="8" fill="#6b6b6b"/>
+                             <circle cx="123" cy="79" r="8" fill="#6b6b6b"/>
+                             <circle cx="77" cy="79" r="4.5" fill="#d4a5a5"/>
+                             <circle cx="123" cy="79" r="4.5" fill="#d4a5a5"/>
+                             <!-- Maple leaf on hoodie -->
+                             <path d="M100 120 L102 126 L108 124 L104 130 L106 136 L100 133 L94 136 L96 130 L92 124 L98 126Z" fill="white" opacity="0.8"/>
+                         </svg>
+                     </div>
+                     <h3 class="breed-name">Northern Boreal</h3>
+                     <p class="breed-latin"><em>Vinterhard</em></p>
+                     <p class="breed-description">
                         Survives the frozen tundra of northern Alberta. With a tiny parka, they can comfortably handle even Norrland winters. <em>Kanske inte Norrland, men Mälardalen borde vara okej.</em> This breed has been known to enjoy fika — though they prefer their cinnamon buns untouched by their paws (they've been seen, but we don't talk about that).
-                    </p>
-                </div>
+                     </p>
+                 </div>
 
-                <div class="breed-card">
-                    <div class="breed-emoji">🏙️🦝</div>
-                    <h3 class="breed-name">Stockholm Alley Special</h3>
-                    <p class="breed-latin"><em>Stockholmspecialen</em></p>
-                    <p class="breed-description">
+                 <div class="breed-card">
+                     <div class="breed-illustration">
+                         <svg viewBox="0 0 200 200" fill="none">
+                             <!-- City skyline -->
+                             <rect x="20" y="110" width="20" height="60" fill="#c4b494"/>
+                             <rect x="25" y="120" width="6" height="8" rx="1" fill="#8ab4d4"/>
+                             <rect x="35" y="125" width="6" height="8" rx="1" fill="#8ab4d4"/>
+                             <rect x="55" y="90" width="25" height="80" fill="#b4a484"/>
+                             <rect x="60" y="100" width="6" height="8" rx="1" fill="#8ab4d4"/>
+                             <rect x="70" y="100" width="6" height="8" rx="1" fill="#ffd480"/>
+                             <rect x="60" y="115" width="6" height="8" rx="1" fill="#8ab4d4"/>
+                             <rect x="70" y="115" width="6" height="8" rx="1" fill="#8ab4d4"/>
+                             <rect x="130" y="100" width="20" height="70" fill="#c4b494"/>
+                             <rect x="135" y="110" width="6" height="8" rx="1" fill="#ffd480"/>
+                             <rect x="145" y="110" width="6" height="8" rx="1" fill="#8ab4d4"/>
+                             <!-- Alley ground -->
+                             <rect x="0" y="165" width="200" height="35" fill="#8a7a6a"/>
+                             <!-- Trash panda in alley -->
+                             <circle cx="100" cy="130" r="25" fill="#8c8c8c"/>
+                             <ellipse cx="100" cy="133" rx="20" ry="14" fill="#4a4a4a"/>
+                             <ellipse cx="92" cy="125" rx="6" ry="7" fill="white"/>
+                             <ellipse cx="108" cy="125" rx="6" ry="7" fill="white"/>
+                             <circle cx="92" cy="126" r="3" fill="#2d2d2d"/>
+                             <circle cx="108" cy="126" r="3" fill="#2d2d2d"/>
+                             <circle cx="93" cy="124.5" r="1.5" fill="white"/>
+                             <circle cx="109" cy="124.5" r="1.5" fill="white"/>
+                             <ellipse cx="100" cy="137" rx="3.5" ry="2.5" fill="#2d2d2d"/>
+                             <path d="M97 141 Q100 144 103 141" stroke="#2d2d2d" stroke-width="1.5" fill="none"/>
+                             <circle cx="86" cy="140" r="3" fill="#f0b4a4" opacity="0.4"/>
+                             <circle cx="114" cy="140" r="3" fill="#f0b4a4" opacity="0.4"/>
+                             <circle cx="80" cy="112" r="7" fill="#6b6b6b"/>
+                             <circle cx="120" cy="112" r="7" fill="#6b6b6b"/>
+                             <circle cx="80" cy="112" r="4" fill="#d4a5a5"/>
+                             <circle cx="120" cy="112" r="4" fill="#d4a5a5"/>
+                             <!-- Swedish flag bandana -->
+                             <path d="M78 105 L85 98 L92 106" fill="#0066B2"/>
+                             <rect x="85" y="98" width="7" height="8" fill="#FFD700" transform="rotate(15 85 100)"/>
+                             <!-- Crossed trash can lids in foreground -->
+                             <ellipse cx="55" cy="170" rx="15" ry="5" fill="#9a8a7a" transform="rotate(-30 55 170)"/>
+                             <ellipse cx="145" cy="175" rx="15" ry="5" fill="#9a8a7a" transform="rotate(20 145 175)"/>
+                         </svg>
+                     </div>
+                     <h3 class="breed-name">Stockholm Alley Special</h3>
+                     <p class="breed-latin"><em>Stockholmspecialen</em></p>
+                     <p class="breed-description">
                         Born and raised in Östermalm alleys. Already speaks basic Swedish and gives you the silent treatment on purpose. They prefer the city life. <em>I will not be going to the countryside. No, I do not want to play with other raccoons. Yes, this is fine.</em> If you want a raccoon that fits into Stockholm apartment life, this is your <em>lagom</em> choice.
-                    </p>
-                </div>
+                     </p>
+                 </div>
 
-            </div>
-        </div>
-    </section>
+             </div>
+         </div>
+     </section>
 
-    <!-- ════════════ TESTIMONIALS ════════════ -->
+     <!-- ════════════ TESTIMONIALS ════════════ -->
 
-    <section id="reviews" class="breeds-section">
-        <div class="section">
-            <div class="section-header">
-                <p class="section-label">Reviews</p>
-                <h2 class="section-title">What Our Raccoon Owners Say</h2>
-                <p class="section-subtitle">Real reviews from real Swedish raccoon parents. Not a single one is fake. Probably.</p>
-            </div>
+     <section id="reviews" class="breeds-section">
+         <div class="section">
+             <div class="section-header">
+                 <p class="section-label">Reviews</p>
+                 <h2 class="section-title">What Our Raccoon Owners Say</h2>
+                 <p class="section-subtitle">Real reviews from real Swedish raccoon parents. Not a single one is fake. Probably.</p>
+             </div>
 
-            <div class="testimonials-grid">
+             <!-- Decorative raccoon face -->
+             <div class="section-raccoons">
+                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                     <circle cx="40" cy="40" r="35" fill="#6b6b6b"/>
+                     <circle cx="40" cy="40" r="28" fill="#8c8c8c"/>
+                     <ellipse cx="40" cy="42" rx="22" ry="15" fill="#4a4a4a"/>
+                     <ellipse cx="32" cy="35" rx="7" ry="8" fill="white"/>
+                     <ellipse cx="48" cy="35" rx="7" ry="8" fill="white"/>
+                     <circle cx="32" cy="36" r="3.5" fill="#2d2d2d"/>
+                     <circle cx="48" cy="36" r="3.5" fill="#2d2d2d"/>
+                     <circle cx="33.5" cy="34.5" r="1.5" fill="white"/>
+                     <circle cx="49.5" cy="34.5" r="1.5" fill="white"/>
+                     <ellipse cx="40" cy="44" rx="4" ry="3" fill="#2d2d2d"/>
+                     <path d="M37 48 Q40 51 43 48" stroke="#2d2d2d" stroke-width="1.5" fill="none"/>
+                     <circle cx="30" cy="47" r="3.5" fill="#f0b4a4" opacity="0.4"/>
+                     <circle cx="50" cy="47" r="3.5" fill="#f0b4a4" opacity="0.4"/>
+                     <circle cx="22" cy="18" r="9" fill="#6b6b6b"/>
+                     <circle cx="58" cy="18" r="9" fill="#6b6b6b"/>
+                     <circle cx="22" cy="18" r="5" fill="#d4a5a5"/>
+                     <circle cx="58" cy="18" r="5" fill="#d4a5a5"/>
+                 </svg>
+                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                     <circle cx="40" cy="40" r="35" fill="#6b6b6b"/>
+                     <circle cx="40" cy="40" r="28" fill="#8c8c8c"/>
+                     <ellipse cx="40" cy="42" rx="22" ry="15" fill="#4a4a4a"/>
+                     <ellipse cx="32" cy="35" rx="7" ry="8" fill="white"/>
+                     <ellipse cx="48" cy="35" rx="7" ry="8" fill="white"/>
+                     <circle cx="32" cy="36" r="3.5" fill="#2d2d2d"/>
+                     <circle cx="48" cy="36" r="3.5" fill="#2d2d2d"/>
+                     <circle cx="33.5" cy="34.5" r="1.5" fill="white"/>
+                     <circle cx="49.5" cy="34.5" r="1.5" fill="white"/>
+                     <ellipse cx="40" cy="44" rx="4" ry="3" fill="#2d2d2d"/>
+                     <path d="M37 48 Q40 51 43 48" stroke="#2d2d2d" stroke-width="1.5" fill="none"/>
+                     <circle cx="30" cy="47" r="3.5" fill="#f0b4a4" opacity="0.4"/>
+                     <circle cx="50" cy="47" r="3.5" fill="#f0b4a4" opacity="0.4"/>
+                     <circle cx="22" cy="18" r="9" fill="#6b6b6b"/>
+                     <circle cx="58" cy="18" r="9" fill="#6b6b6b"/>
+                     <circle cx="22" cy="18" r="5" fill="#d4a5a5"/>
+                     <circle cx="58" cy="18" r="5" fill="#d4a5a5"/>
+                 </svg>
+             </div>
 
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        "I bought a raccoon and my neighbor is no longer angry. Thank you. 🇸🇪🇨🇦"
-                    </p>
-                    <p class="testimonial-author">Sven</p>
-                    <p class="testimonial-location">Göteborg</p>
-                </div>
+             <div class="testimonials-grid">
 
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        "My raccoon fits perfectly into <em>lagom</em> culture. It's not too cute, not too trashy. Perfect balance. Just yesterday it organized our kitchen while I was at work. Very Swedish. <em>Hyggeligt, men bättre.</em>"
-                    </p>
-                    <p class="testimonial-author">Karin</p>
-                    <p class="testimonial-location">Stockholm</p>
-                </div>
+                 <div class="testimonial-card">
+                     <div class="testimonial-stars">★★★★★</div>
+                     <p class="testimonial-text">
+                         <svg width="24" height="24" viewBox="0 0 24 24" fill="#d4a574" style="margin-right:8px"><path d="M4 4h6v6H4zm10 0h6v6h-6zM4 14h6v6H4zm10 0h6v6h-6z" opacity="0.3"/><rect x="11" y="11" width="2" height="2" x="11" y="11" width="2" height="2"/></svg>
+                         "I bought a raccoon and my neighbor is no longer angry. Thank you. 🇸🇪🇨🇦"
+                     </p>
+                     <div class="testimonial-author">
+                         Sven
+                         <span class="author-raccoon">🦝</span>
+                     </div>
+                     <p class="testimonial-location">Göteborg</p>
+                 </div>
 
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        "I bought a Platinum raccoon. It moved to Malmö and is doing MUCH better than me. 10/12 would recommend. They have a great life there. I'm genuinely jealous. <em>Alltid bra i Sverige, va?</em>"
-                    </p>
-                    <p class="testimonial-author">Erik</p>
-                    <p class="testimonial-location">Uppsala</p>
-                </div>
+                 <div class="testimonial-card">
+                     <div class="testimonial-stars">★★★★★</div>
+                     <p class="testimonial-text">
+                         "My raccoon fits perfectly into <em>lagom</em> culture. It's not too cute, not too trashy. Perfect balance. Just yesterday it organized our kitchen while I was at work. Very Swedish. <em>Hyggeligt, men bättre.</em>"
+                     </p>
+                     <div class="testimonial-author">
+                         Karin
+                         <span class="author-raccoon">🦝</span>
+                     </div>
+                     <p class="testimonial-location">Stockholm</p>
+                 </div>
 
-            </div>
-        </div>
-    </section>
+                 <div class="testimonial-card">
+                     <div class="testimonial-stars">★★★★★</div>
+                     <p class="testimonial-text">
+                         "I bought a Platinum raccoon. It moved to Malmö and is doing MUCH better than me. 10/12 would recommend. They have a great life there. I'm genuinely jealous. <em>Alltid bra i Sverige, va?</em>"
+                     </p>
+                     <div class="testimonial-author">
+                         Erik
+                         <span class="author-raccoon">🦝</span>
+                     </div>
+                     <p class="testimonial-location">Uppsala</p>
+                 </div>
 
-    <!-- ════════════ FAQ ════════════ -->
+             </div>
+         </div>
+     </section>
 
-    <section id="faq" class="faq-section">
-        <div class="section">
-            <div class="section-header">
-                <p class="section-label">FAQ</p>
-                <h2 class="section-title">Common Questions</h2>
-                <p class="section-subtitle">Everything you need to know before welcoming a raccoon into your Swedish home. <em>Vanliga frågor, vanliga svar. Inte alltför krångligt.</em></p>
-            </div>
+     <!-- ════════════ FAQ ════════════ -->
 
-            <div class="faq-list">
+     <section id="faq" class="faq-section">
+         <div class="section">
+             <div class="section-header">
+                 <p class="section-label">FAQ</p>
+                 <h2 class="section-title">Common Questions</h2>
+                 <p class="section-subtitle">Everything you need to know before welcoming a raccoon into your Swedish home. <em>Vanliga frågor, vanliga svar. Inte alltför krångligt.</em></p>
+             </div>
 
-                <details class="faq-item">
-                    <summary class="faq-question">
+             <div class="faq-list">
+
+                 <details class="faq-item">
+                     <summary class="faq-question">
                         Are they legal? <span class="faq-chevron">▾</span>
-                    </summary>
-                    <div class="faq-answer">
-                        <p>Absolutely! All our raccoons are imported under Import Permit <strong>#SE-2024-RACCOON-42069</strong>, fully compliant with the Swedish Customs Raccoon Import Act of 2024. (Proposed in the Riksdagen by Sweden's first Raccoon Party candidate.) We handle all paperwork — so all you have to do is prepare a cozy space and your heart. <em>Ja, det är lagligt. Vi lovar. Nästan.</em></p>
-                    </div>
-                </details>
+                     </summary>
+                     <div class="faq-answer">
+                         <p>Absolutely! All our raccoons are imported under Import Permit <strong>#SE-2024-RACCOON-42069</strong>, fully compliant with the Swedish Customs Raccoon Import Act of 2024. (Proposed in the Riksdagen by Sweden's first Raccoon Party candidate.) We handle all paperwork — so all you have to do is prepare a cozy space and your heart. <em>Ja, det är lagligt. Vi lovar. Nästan.</em></p>
+                     </div>
+                 </details>
 
-                <details class="faq-item">
-                    <summary class="faq-question">
+                 <details class="faq-item">
+                     <summary class="faq-question">
                         Will they survive the winter? <span class="faq-chevron">▾</span>
-                    </summary>
-                    <div class="faq-answer">
-                        <p>They're Canadian. They have hoodies. We'll buy the hoodie separately (<strong>kr 2,495</strong>). Our raccoons are some of the hardiest animals on earth — if they can eat discarded kebab from Stawis, they can survive <em>anything</em>. A properly fitted Canadian hoodie costs extra (kr 2,495) and is <em>strongly recommended</em> for Norrland deliveries. <em>De är vana vid kyla, no worries.</em></p>
-                    </div>
-                </details>
+                     </summary>
+                     <div class="faq-answer">
+                         <p>They're Canadian. They have hoodies. We'll buy the hoodie separately (<strong>kr 2,495</strong>). Our raccoons are some of the hardiest animals on earth — if they can eat discarded kebab from Stawis, they can survive <em>anything</em>. A properly fitted Canadian hoodie costs extra (kr 2,495) and is <em>strongly recommended</em> for Norrland deliveries. <em>De är vana vid kyla, no worries.</em></p>
+                     </div>
+                 </details>
 
-                <details class="faq-item">
-                    <summary class="faq-question">
+                 <details class="faq-item">
+                     <summary class="faq-question">
                         Can they climb inside houses? <span class="faq-chevron">▾</span>
-                    </summary>
-                    <div class="faq-answer">
-                        <p>That's not a bug — it's a feature. <strong>Free security system included!</strong> Your raccoon will be on the roof at 3am. No, they don't protect you. Yes, they will judge you from the gutter. But at least they look adorable doing it. <em>Det kallas för frihet, Sven.</em> Also a feature. <em>Free upgrade.</em></p>
-                    </div>
-                </details>
+                     </summary>
+                     <div class="faq-answer">
+                         <p>That's not a bug — it's a feature. <strong>Free security system included!</strong> Your raccoon will be on the roof at 3am. No, they don't protect you. Yes, they will judge you from the gutter. But at least they look adorable doing it. <em>Det kallas för frihet, Sven.</em> Also a feature. <em>Free upgrade.</em></p>
+                     </div>
+                 </details>
 
-                <details class="faq-item">
-                    <summary class="faq-question">
+                 <details class="faq-item">
+                     <summary class="faq-question">
                         Are they little bears? <span class="faq-chevron">▾</span>
-                    </summary>
-                    <div class="faq-answer">
-                        <p>No. They are trash pandas. There is a significant difference. A bear mauls you. A raccoon holds your kitchen hostage and negotiates for more cereal. <strong>Choose your fighter.</strong> <em>Inte samma sak, alls.</em></p>
-                    </div>
-                </details>
+                     </summary>
+                     <div class="faq-answer">
+                         <p>No. They are trash pandas. There is a significant difference. A bear mauls you. A raccoon holds your kitchen hostage and negotiates for more cereal. <strong>Choose your fighter.</strong> <em>Inte samma sak, alls.</em></p>
+                     </div>
+                 </details>
 
-                <details class="faq-item">
-                    <summary class="faq-question">
+                 <details class="faq-item">
+                     <summary class="faq-question">
                         How long does delivery take? <span class="faq-chevron">▾</span>
-                    </summary>
-                    <div class="faq-answer">
-                        <p>3–6 business days, depending on how much trash they packed along the way. We've had raccoons get stuck in bear traps on the way to Gothenburg, but that's just part of the Canadian experience. <em>Var tålmodig. Din raccoon kommer fram. Ibland med en historia.</em> Sometimes with a story. <em>Men de lever.</em></p>
-                    </div>
-                </details>
+                     </summary>
+                     <div class="faq-answer">
+                         <p>3–6 business days, depending on how much trash they packed along the way. We've had raccoons get stuck in bear traps on the way to Gothenburg, but that's just part of the Canadian experience. <em>Var tålmodig. Din raccoon kommer fram. Ibland med en historia.</em> Sometimes with a story. <em>Men de lever.</em></p>
+                     </div>
+                 </details>
 
-            </div>
-        </div>
-    </section>
+             </div>
+         </div>
+     </section>
 
-    <!-- ════════════ FOOTER ════════════ -->
+     <!-- ════════════ FOOTER ════════════ -->
 
-    <footer class="site-footer" id="contact">
-        <div class="footer-stats">
-            <div>
-                <div class="stat-number">1,337</div>
-                <div class="stat-label">Raccoons Imported</div>
-            </div>
-            <div>
-                <div class="stat-number">1,284</div>
-                <div class="stat-label">Happy Swedish Families</div>
-            </div>
-            <div>
-                <div class="stat-number">847</div>
-                <div class="stat-label">Bear Traps Avoided</div>
-            </div>
-        </div>
+     <footer class="site-footer" id="contact">
+         <div class="footer-stats">
+             <div>
+                 <div class="stat-number">1,337</div>
+                 <div class="stat-label">Raccoons Imported</div>
+             </div>
+             <div>
+                 <div class="stat-number">1,284</div>
+                 <div class="stat-label">Happy Swedish Families</div>
+             </div>
+             <div>
+                 <div class="stat-number">847</div>
+                 <div class="stat-label">Bear Traps Avoided</div>
+             </div>
+         </div>
 
-        <div class="footer-bottom">
-            <p class="footer-disclaimer">
+         <div class="footer-bottom">
+             <p class="footer-disclaimer">
                 Raccoons may contain 10–15% trash, 85–90% panda soul. Not FDA approved. Not even close. All raccoons are sold with the understanding that they will judge your life choices. Return policy: not available — your raccoon makes the final decision. <em>Inga returer. Hela hjärtat.</em>
-            </p>
-            <p class="footer-copyright">© 2024 Trash Panda Import AB. All rights reserved. All raccoons reserved.</p>
-            <p class="footer-tagline">"Vi tar skräpet allvarligt."</p>
-        </div>
-    </footer>
+             </p>
+             <p class="footer-copyright">© 2024 Trash Panda Import AB. All rights reserved. All raccoons reserved.</p>
+             <p class="footer-tagline">"Vi tar skräpet allvarligt."</p>
+         </div>
+     </footer>
 
-    <!-- ════════════ SCRIPTS ════════════ -->
+     <!-- ════════════ SCRIPTS ════════════ -->
 
-    <script src="script.js"></script>
+     <script src="script.js"></script>
 
 </body>
 </html>

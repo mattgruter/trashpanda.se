@@ -24,37 +24,10 @@
     requestAnimationFrame(step);
   }
 
-  // ─── 2. Floating Emoji Background ────────────────────────────────
+   // ─── 2. Floating Emoji Background ────────────────────────────────
+   // — handled by CSS .floaters container above, no JS needed
 
-  function createFloatingEmojis() {
-    var emojis = ["\uD83E\uDD9D", "\uD83D\uDDD1\uFE0F"];
-    var count = 12 + Math.floor(Math.random() * 4);
 
-    for (var i = 0; i < count; i++) {
-      var span = document.createElement("span");
-      var emoji = emojis[Math.floor(Math.random() * emojis.length)];
-
-      span.textContent = emoji;
-      span.style.position = "fixed";
-      span.style.left = Math.random() * 100 + "vw";
-      span.style.bottom = -(20 + Math.random() * 60) + "px";
-      span.style.fontSize = (20 + Math.random() * 20) + "px";
-      span.style.opacity = "0.1";
-      span.style.pointerEvents = "none";
-      span.style.zIndex = "0";
-      span.style.userSelect = "none";
-
-      var duration = 8 + Math.random() * 12;
-      var delay = -(Math.random() * duration);
-      span.style.animation = "floatUp " + duration + "s ease-in " + delay + "s infinite";
-
-      document.body.appendChild(span);
-    }
-
-    var styleEl = document.createElement("style");
-    styleEl.textContent = "@keyframes floatUp{0%{transform:translateY(0) rotate(0deg);opacity:0.1}50%{opacity:0.15}100%{transform:translateY(-110vh) rotate(360deg);opacity:0}}";
-    document.head.appendChild(styleEl);
-  }
 
   // ─── 3. FAQ Accordion ────────────────────────────────────────────
 
@@ -209,14 +182,14 @@
 
   // ─── Init ────────────────────────────────────────────────────────
 
-  document.addEventListener("DOMContentLoaded", function() {
-    animateCounter(1337, 2000);
-    createFloatingEmojis();
-    initFAQ();
-    initHeroEasterEgg();
-    initFadeInAnimations();
-    initSmoothScroll();
-    initNavScroll();
-  });
+   document.addEventListener("DOMContentLoaded", function() {
+     animateCounter(1337, 2000);
+     // createFloatingEmojis(); // — handled by CSS .floaters container
+     initFAQ();
+     initHeroEasterEgg();
+     initFadeInAnimations();
+     initSmoothScroll();
+     initNavScroll();
+    });
 
 })();
