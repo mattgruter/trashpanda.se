@@ -271,6 +271,9 @@ ul {
   height: auto;
   margin-bottom: 1.5rem;
   filter: drop-shadow(0 8px 24px rgba(0,0,0,0.08));
+  border: 3px solid var(--border);
+  border-radius: 50%;
+  background: var(--bg-cream);
 }
 
 .hero-badge {
@@ -639,6 +642,13 @@ ul {
   height: 160px;
 }
 
+.breed-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .breed-card h3 {
   font-size: 1.25rem;
   font-weight: 700;
@@ -963,9 +973,10 @@ ul {
     padding-top: 8rem;
   }
 
-  .raccoon-illustration {
-    width: 200px;
-  }
+   .raccoon-illustration {
+     width: 200px;
+     border-width: 2px;
+    }
 
   .section {
     padding: 60px 20px;
