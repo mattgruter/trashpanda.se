@@ -1,3 +1,4 @@
 .vercel
 opencode.json
 .opencode/plans
+.DS_Store
